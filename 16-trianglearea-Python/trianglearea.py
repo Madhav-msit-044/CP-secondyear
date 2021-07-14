@@ -5,5 +5,15 @@
 
 
 def trianglearea(s1, s2, s3):
+    x = float(input(s1))
+    y = float(input(s2))
+    z = float(input(s3))
+    
+    # calculating semiperimeter
+    s = (x+y+z)/2
+    
+    # calculating areaoftriangle
+    area = ((s*(s-x)*(s-y)*(s-z))**0.5)
+    print (int(area))
 	# your code goes here
-	pass
+	
