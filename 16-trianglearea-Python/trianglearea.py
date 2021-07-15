@@ -3,17 +3,17 @@
 # triangle that has those lengths of its side. If no such triangle exists, return 0. Hint: you
 # will probably wish to use Heron's Formula.
 
-
+import math
 def trianglearea(s1, s2, s3):
-    x = float(input(s1))
-    y = float(input(s2))
-    z = float(input(s3))
+    s=(s1+s2+s3)/2
+    area=math.sqrt(s*(s-s1)(s-s2)(s-s3))
+    return (float(area))
     
     # calculating semiperimeter
-    s = (x+y+z)/2
+    #s = (x+y+z)/2
     
     # calculating areaoftriangle
-    area = ((s*(s-x)*(s-y)*(s-z))**0.5)
-    print (int(area))
+    #area = ((s*(s-x)*(s-y)*(s-z))**0.5)
+    #print (int(area))
 	# your code goes here
 	
