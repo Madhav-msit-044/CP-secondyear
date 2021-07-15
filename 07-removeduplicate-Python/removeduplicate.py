@@ -4,5 +4,11 @@
 # The second or further occurrence of duplicate should be removed.
 
 def removeduplicate(text):
+    newtwxt = ""
+    for i in text:
+        if i in newtwxt:
+            pass
+        else:
+            newtwxt+=i
+    return newtwxt
 	# Your code goes here
-	pass
